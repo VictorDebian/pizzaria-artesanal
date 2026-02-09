@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --gradient-hero: linear-gradient(
+    rgba(68, 17, 13, 0.85),
+    rgba(68, 17, 13, 0.85)
+  );
+
+
+  --text-color:#FFFFFF;
+
+  --color-title: #D92929;
+
+  --color-nav-bar: #363636d8;
+
+  --color-destaque: #D92929;
+
+  --color-price:#D96704;
+
+  --color-span:rgb(227, 75, 32);
+
+   --gradient-button: linear-gradient(90deg, #E53935,  #F28C1B); 
+
+   --gradient-button-hover: linear-gradient(90deg, #C62828,  #E65100);
+
+   --background-footer:#111826;
+
+
+}
+
+body{
+    min-height: 100vh;
+    background: var(--gradient-hero), url(../src/pizza-2589575_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    background-color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 3px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+   
+}
+
+
+
+header h1{
+     font-family: "SN Pro", sans-serif;
+     color: var(--color-title);
+}
+
+
+
+
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+.nav-bar ul li a{
+    color: var(--color-nav-bar);
+    font-family: "SN Pro", sans-serif;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bolder;
+    
+}
+
+.nav-bar ul li a:hover{
+    text-decoration: underline;
+    color: var(--color-destaque);
+}
+
+main{
+    padding-top: 50px;
+}
+
+.hero{
+    margin-top: 5%;
+    min-height: auto;
+    padding: 140px 0;
+    text-align: center;
+
+}
+
+.hero h2{
+    font-size: 3.7em;
+    color: var(--text-color);
+}
+
+h2 span{
+    color: var(--color-span);
+}
+
+.hero p{
+    margin-top: 20px;
+    color: var(--text-color);
+    font-size: 1.3em;
+    max-width: 700px;
+    margin: 28px auto 0;
+    line-height: 1.5;
+}
+
+.hero button{
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background: var(--gradient-button);
+    color: var(--text-color);
+    font-size: 1.1em;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.hero button:hover{
+    background: var(--gradient-button-hover);
+}
+
+.info{
+    text-align: center;
+    background-color: var(--text-color);
+}
+
+.info h3{
+    font-size: 2.4em;
+    padding: 30px;
+    color: var(--color-span);
+    text-shadow: rgb(0, 0, 0,  0.9) rgb(0, 0, 0, 0.9);
+}
+
+
+
+.info p{
+    font-size: 1.3em;
+    margin-top: 5px;
+    color: var(--color-nav-bar);
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin: 5px auto 25px;
+    line-height: 1.5;
+}
+
+.card-info{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.card-info article{
+    width: 250px;
+}
+
+
+.card-img{
+    height: 180px;
+    margin-top: 25px;
+    overflow: hidden;
+    padding-bottom: 7px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+article span{
+    margin-top: 15px;
+    color: var(--color-destaque);
+    font-weight: 700;
+    display: block;
+    
+}
+
+article:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.price{
+    color: var(--color-price);
+    font-size: 1.2em;
+}
+
+button{
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    background: var(--gradient-button);
+    color: var(--text-color);
+    width: 200px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover{
+    background: var(--gradient-button-hover);
+}
+
+.our-story{
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.image-pizzeria img{
+    max-width: 600px; 
+    height: 600px;
+      
+
+}
+
+.history{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 600px;
+   
+}
+
+.history h3{
+    font-size: 2.4em;
+    color: var(--color-destaque);
+}
+
+.history p{
+    margin-top: 15px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.feature-icon{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+.icon{
+    display: flex;
+    gap: 10px;
+}
+
+.icon i{
+    color: var(--color-destaque);
+}
+
+.footer{
+    background-color: var(--text-color);
+}
+
+.footer hr{
+    color: var(--color-destaque);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 50px;
+    background-color: var(--background-footer);
+    color: var(--text-color);
+    padding-bottom: 35px;
+}
+
+.footer-about{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-about p{
+    line-height: 1.4;
+}
+
+.footer-links nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.footer-links a{
+    color: var(--text-color);
+}
+
+.footer-contact{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.footer address{
+    line-height: 1.5;
+}
+
+.footer-hours{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+
