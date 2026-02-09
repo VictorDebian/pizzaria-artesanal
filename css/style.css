@@ -76,6 +76,7 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 25px;
     
 }
@@ -277,6 +278,7 @@ button:hover{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 25px;
     
 }
@@ -302,6 +304,7 @@ button:hover{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
     padding-top: 50px;
     background-color: var(--background-footer);
     color: var(--text-color);
@@ -321,6 +324,7 @@ button:hover{
 .footer-links nav ul{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
     padding-top: 10px;
 }
@@ -332,6 +336,7 @@ button:hover{
 .footer-contact{
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -341,11 +346,102 @@ button:hover{
 
 .footer-hours{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
 }
 
+@media (max-width: 900px) {
+  .image-pizzeria img {
+    max-width: 450px;
+    height: auto;
+  }
 
+  .history{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .footer-hours{
+    padding-top: 30px;
+  }
+
+}
+
+@media (max-width: 600px){
+
+    main{
+        padding-top: 120px;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .nav-bar ul{
+        flex-direction: column;
+        gap: 12px;
+      
+    }
+
+    .hero{
+        padding: 80px 20px;
+    }
+
+    .hero h2{
+        font-size: 2.2em;
+    }
+
+    .hero p{
+        font-size: 1.1em;
+    }
+
+    .card-info{
+        justify-content: center;
+    }
+
+    .card-info article{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .our-story{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    
+
+    }
+
+ 
+    .image-pizzeria img{
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .history{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .history p{
+        max-width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footer-container {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       gap: 25px;
+   }
+}
 
 
 
