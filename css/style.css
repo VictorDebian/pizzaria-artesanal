@@ -21,7 +21,7 @@
 
   --color-nav-bar: #363636d8;
 
-  --color-destaque: #D92929;
+  --color-emphasis: #D92929;
 
   --color-price:#D96704;
 
@@ -92,7 +92,7 @@ header h1{
 
 .nav-bar ul li a:hover{
     text-decoration: underline;
-    color: var(--color-destaque);
+    color: var(--color-emphasis);
 }
 
 main{
@@ -200,7 +200,7 @@ h2 span{
 
 article span{
     margin-top: 15px;
-    color: var(--color-destaque);
+    color: var(--color-emphasis);
     font-weight: 700;
     display: block;
     
@@ -263,7 +263,7 @@ button:hover{
 
 .history h3{
     font-size: 2.4em;
-    color: var(--color-destaque);
+    color: var(--color-emphasis);
 }
 
 .history p{
@@ -289,7 +289,7 @@ button:hover{
 }
 
 .icon i{
-    color: var(--color-destaque);
+    color: var(--color-emphasis);
 }
 
 .footer{
@@ -297,7 +297,7 @@ button:hover{
 }
 
 .footer hr{
-    color: var(--color-destaque);
+    color: var(--color-emphasis);
 }
 
 .footer-container{
